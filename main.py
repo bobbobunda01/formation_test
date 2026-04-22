@@ -12,9 +12,15 @@ class Graph:
         visited.add(v)
         print(v, end=' ')
         
+<<<<<<< HEAD
         for neighbour in self.graph[v]:
             if neighbour not in visited:
                 self.dfs_rec(neighbour, visited)
+=======
+        for nb in self.graph[v]:
+            if nb not in visited:
+                self.__dfs_util(nb, visited)
+>>>>>>> dev
     
     def dfs(self, v):
         visited=set()
